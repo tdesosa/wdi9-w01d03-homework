@@ -84,3 +84,51 @@ const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for(i = 0; i < ninjaTurtles.length; i++){
     console.log(ninjaTurtles[i].toUpperCase());
 }
+
+// RETURN OF THE CLOSETS
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+const kristynsShoe = kristynsCloset[0];
+kristynsCloset.splice(0, 1);
+console.log(kristynsCloset);
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset);
+
+const outfitOne = [kristynsCloset[0], thomsCloset[0][0], kristynsCloset[3]];
+console.log(outfitOne);
+
+const outfitTwo = [thomsCloset[2][3], kristynsCloset[1], kristynsCloset[3]];
+console.log(outfitTwo);
+
+const outfitThree = [kristynsCloset[3], thomsCloset[0][2], kristynsCloset[4]];
+console.log(outfitThree);
