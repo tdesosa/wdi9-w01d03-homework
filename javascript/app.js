@@ -138,3 +138,12 @@ for(i = 0; i < kristynsCloset.length; i++){
 }
 
 console.log(thomsCloset[0], thomsCloset[1], thomsCloset[2]);
+
+// MULTIPLES OF 3 AND 5
+let sum = 0;
+for(i = 0; i < 1000; i++){
+    if(i % 3 === 0 || i % 5 === 0){
+        sum += i;
+    }
+}
+console.log(sum);
