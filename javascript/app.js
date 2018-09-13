@@ -48,4 +48,31 @@ for(i = 1; i <= 100; i++){
        console.log("FizzBuzz");
    }
    console.log(i);
-   }
+}
+
+// GETTING TO KNOW YOU
+
+const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+shahzad.shift();
+console.log(shahzad);
+shahzad.push("Gameboy");
+
+daniel.push(daniel[1] + 1);
+console.log(daniel);
+
+ryan.splice(2, 2, "Gotham City");
+console.log(ryan);
+
+reuben.splice(2, 2, "Chicago");
+console.log(reuben);
+
+jim.splice(2, 2, "Miami", "Denver", "New York City");
+console.log(jim);
+
+jim.splice(2, 1);
+console.log(jim);
