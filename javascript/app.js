@@ -132,3 +132,9 @@ console.log(outfitTwo);
 
 const outfitThree = [kristynsCloset[3], thomsCloset[0][2], kristynsCloset[4]];
 console.log(outfitThree);
+
+for(i = 0; i < kristynsCloset.length; i++){
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
+
+console.log(thomsCloset[0], thomsCloset[1], thomsCloset[2]);
